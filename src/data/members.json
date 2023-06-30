@@ -1,0 +1,35 @@
+[
+        {
+            "designation": "Managing Director",
+            "name": "Gurdyal Virdi",
+            "qualification": "BSc / REG-CH"
+            ,"phone":"+254 722 859584"
+        },
+        {
+            "designation": "Administration",
+            "name": "Prabdip Virdi",
+            "qualification": "BSc / REG-CH"
+            ,"phone":"+254 726 563026"
+        },
+        {
+            "designation": "Civil Engineering",
+            "name": "Amardip Virdi",
+            "qualification": "BEng"
+            ,"phone":"+254 793 977781"
+        },
+    
+        {
+            "designation": "Permanent Foreman",
+            "availability": "5"
+        },
+        {
+            "designation": "Permanent Qualified Artisans",
+            "availability": "15"
+        },
+        {
+            "designation": "Casual Labour",
+            "availability": "Available wherever required"
+     }
+
+  
+]
