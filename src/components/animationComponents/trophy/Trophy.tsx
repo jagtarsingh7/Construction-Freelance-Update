@@ -1,7 +1,7 @@
-import LogoCarousel from "./LogoCarousel"
+import LogoCarousel from "../logoCarousel/LogoCarousel"
 import { useInView, } from '@react-spring/web';
-import ViewDetectAnimation from "./ViewDetectAnimation";
-import CountUp from "./CountUp";
+import ViewDetectAnimation from "../viewDetectAnimation/ViewDetectAnimation";
+import CountUp from "../countUp/CountUp";
 
 function Trophy() {
     const [trophyRef, trophyAnimated] = useInView()
@@ -19,7 +19,6 @@ function Trophy() {
                                 Trusted by Businesses
                             </h2>
                         </ViewDetectAnimation>
-
                         <LogoCarousel></LogoCarousel>
                     </div>
 

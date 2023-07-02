@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/logo.png"
-import MyContext from '../../context/MyContext';
+import MyContext from '../../../context/MyContext';
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);

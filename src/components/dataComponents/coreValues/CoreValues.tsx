@@ -1,10 +1,10 @@
-import values from "../../data/coreValues.json"
-import ViewDetectAnimation from "../animationComponents/ViewDetectAnimation";
+import values from "../../../data/coreValues.json"
+import ViewDetectAnimation from "../../animationComponents/viewDetectAnimation/ViewDetectAnimation";
 
 function CoreValues() {
 
   return (
-    <div className="bg-white  h-full flex flex-col items-center justify-end md:mt-0 mt-5">
+    <div className="bg-white flex flex-col items-center justify-end md:mt-0 mt-5">
       <div className="max-w-5xl flex flex-col items-center  mt-10 ">
         <ViewDetectAnimation direction={"X"} level={-20} speed={500} styles={"border-b-2 mx-auto  font-extrabold md:text-4xl text-3xl mb-4 text-yellow-300 font-serif"} to={0} repeat={false}>
           <h1 > Background</h1>

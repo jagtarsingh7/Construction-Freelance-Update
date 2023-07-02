@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ViewDetectAnimation from '../animationComponents/ViewDetectAnimation';
+import ViewDetectAnimation from '../../animationComponents/viewDetectAnimation/ViewDetectAnimation';
 
 function QuoteForm() {
   const[loading, setloading]=useState(false)

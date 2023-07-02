@@ -1,11 +1,8 @@
 import  { useState, useEffect } from 'react';
-import logo1 from '../images/client1.png';
-import logo2 from '../images/client4.png';
-import logo3 from '../images/client5.jpeg';
-import logo4 from '../images/client6.png';
+
 
 const LogoCarousel = () => {
-  const logos = [logo1, logo2, logo3, logo4];
+  const logos = ['/images/client6.png', '/images/client5.jpeg', '/images/client5.jpeg', '/images/client6.png'];
   const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
 
   useEffect(() => {

@@ -49,3 +49,9 @@ export interface IScrollButtonProp {
   parallaxEffect:boolean,
   target:React.RefObject<HTMLDivElement>
 }
+
+export interface IFeatureCardsProp {
+
+ absolutePosition:boolean
+ 
+}
