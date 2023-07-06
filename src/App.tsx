@@ -3,12 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import { BrowserRouter } from 'react-router-dom';
+import Services from './pages/Services';
 
 function App() {
   return (
     <BrowserRouter>
      <div className="App">
-    <Home></Home>
+    <Services></Services>
     </div>
     </BrowserRouter>
    

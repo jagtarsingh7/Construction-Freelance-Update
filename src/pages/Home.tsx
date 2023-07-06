@@ -24,7 +24,7 @@ function Home() {
                 style={{minHeight:"50rem"}}
             >
                 <Banner parallaxEffect={true} heading={"We build the future with passion"} subHeading={"Virdicon"} direction1={"X"} direction2={"Y"}
-                    backgroundImageName={"site1.jpg"} extraLayer={true} speed1={500} speed2={1000} level1={-50} level2={100}   >
+                backgroundImageName={"site1.jpg"} extraLayer={true} speed1={500} speed2={1000} level1={-50} level2={100} customCss1={null} customCss2={null}   >
                     <FeatureCards />
                 </Banner>
 

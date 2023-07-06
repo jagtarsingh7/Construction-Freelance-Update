@@ -5,7 +5,7 @@ import { IBannerProp } from '../../../Interface/Interfaces';
 
 export default function Banner(props: IBannerProp) {
 
-    const { parallaxEffect, extraLayer, heading, subHeading, backgroundImageName, children } = props
+    const { parallaxEffect, extraLayer, heading, subHeading, backgroundImageName, children , customCss1, customCss2, speed1, speed2, level1, level2} = props
 
     const childrenArray = Children.toArray(children);
 
@@ -58,10 +58,10 @@ export default function Banner(props: IBannerProp) {
                     className="flex flex-col items-center text-white text-center relative  pt-32 h-full"
                 >
                     <animated.div style={animateSpring1}>
-                        {heading.length >= 1 ? (<p className="xl:text-7xl md:text-5xl p-5 text-3xl underline font-serif mb-20">{heading}</p>) : (childrenArray[0])}
+                        {heading.length >= 1 ? (<p className={`${customCss1?(customCss1):('xl:text-7xl md:text-5xl p-5 text-3xl underline font-serif mb-20')}`}>{heading}</p>) : (childrenArray[0])}
                     </animated.div>
                     <animated.div style={animateSpring2}>
-                        {subHeading.length >= 1 ? (<h1 className=" md:border-8 border-4 md:p-10 md:px-8 p-12  border-yellow-300 xl:text-4xl  md:text-3xl text-xl font-medium mb-20 mt-10">{subHeading}</h1>) : (childrenArray[1])}
+                        {subHeading.length >= 1 ? (<h1 className={`${customCss2?(customCss2):(' md:border-8 border-4 md:p-10 md:px-8 p-12  border-yellow-300 xl:text-4xl  md:text-3xl text-xl font-medium mb-20 mt-10')}`}>{subHeading}</h1>) : (childrenArray[1])}
                     </animated.div>
                     {
                         childrenArray.length >= 1 && <animated.div style={animateSpring3} >{childrenArray.map((child, index) => (<div key={index}>{child}</div>))} </animated.div>
@@ -72,10 +72,10 @@ export default function Banner(props: IBannerProp) {
             <div className="h-full bg-cover bg-center" style={{ backgroundImage: `url(/images/${backgroundImageName})` }}>
                 <div className="flex flex-col h-full justify-center items-center text-white text-center">
                     <animated.div style={animateSpring1} >
-                        {heading.length >= 1 ? (<p className="xl:text-7xl md:text-5xl p-5 text-3xl underline font-serif mb-20">{heading}</p>) : (childrenArray[0])}
+                        {heading.length >= 1 ? (<p className={`${customCss1?(customCss1):('xl:text-7xl md:text-5xl p-5 text-3xl underline font-serif mb-20')}`}>{heading}</p>) : (childrenArray[0])}
                     </animated.div>
                     <animated.div style={animateSpring2}>
-                        {subHeading.length >= 1 ? (<h1 className=" md:border-8 border-4 md:p-10 md:px-8 p-12 border-yellow-300 xl:text-4xl  md:text-3xl text-xl font-medium mb-20 mt-10">{subHeading}</h1>) : (childrenArray[1])}
+                        {subHeading.length >= 1 ? (<h1 className={`${customCss2?(customCss2):(' md:border-8 border-4 md:p-10 md:px-8 p-12  border-yellow-300 xl:text-4xl  md:text-3xl text-xl font-medium mb-20 mt-10')}`}>{subHeading}</h1>) : (childrenArray[1])}
                     </animated.div>
                     {
                         childrenArray.length >= 1 && <animated.div style={animateSpring3} >{childrenArray.map((child, index) => (<div key={index}>{child}</div>))} </animated.div>

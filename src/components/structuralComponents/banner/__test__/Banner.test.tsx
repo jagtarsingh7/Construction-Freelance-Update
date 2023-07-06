@@ -12,6 +12,6 @@ describe('Banner', () => {
       children: <div>Child Component</div>,
     };
 
-    render(<Banner direction1={'X'} direction2={'X'} speed1={0} speed2={0} level1={0} level2={0} {...props} />);
+    render(<Banner customCss1={null} customCss2={null} direction1={'X'} direction2={'X'} speed1={0} speed2={0} level1={0} level2={0} {...props} />);
   });
 });
