@@ -4,12 +4,12 @@ import ViewDetectAnimation from "../../animationComponents/viewDetectAnimation/V
 function CoreValues() {
 
   return (
-    <div className="bg-white flex flex-col items-center justify-end md:mt-0 mt-5">
-      <div className="max-w-5xl flex flex-col items-center  mt-10 ">
+    <div className="bg-white flex flex-col items-center justify-end  mt-5 px-5 ">
+      <div className="max-w-5xl flex flex-col items-center mt-10 ">
         <ViewDetectAnimation direction={"X"} level={-20} speed={500} styles={"border-b-2 mx-auto  font-extrabold md:text-4xl text-3xl mb-4 text-yellow-300 font-serif"} to={0} repeat={false}>
           <h1 > Background</h1>
         </ViewDetectAnimation>
-        <ViewDetectAnimation direction={"Y"}  styles={""} speed={0} level={0} to={0} repeat={false}>
+        <ViewDetectAnimation direction={"Y"}  styles={"md:mt-10 mt-5"} speed={0} level={0} to={0} repeat={false}>
           <p className="md:text-base text-sm text-gray-700 text-center leading-relaxed mb-8 px-5 ">
             Established in 2012, VIRDICON Ltd (parent company-Rattansons Building Contractors Ltd)
             is a distinct organisation that strives to offer exceptional services and solutions within the construction sector.

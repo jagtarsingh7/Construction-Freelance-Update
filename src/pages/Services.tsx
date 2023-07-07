@@ -10,7 +10,7 @@ function Services() {
     const parallax = useRef<IParallax>(null!)
     return (
         <Parallax
-            pages={7.4}
+            pages={6.4}
             ref={parallax}
             className="bg-white">
 
@@ -22,51 +22,43 @@ function Services() {
             </Banner>
 
             <ParallaxLayer
-                offset={1}
+                offset={0.9}
                 speed={0.4}
-                factor={0.5}>
-                <div className="container mx-auto">
-                    <section className="text-gray-600 body-font">
-                        <div className="container px-5 pb-24 pt-10 mx-auto flex flex-wrap">
-                            <ViewDetectAnimation direction={"Y"} level={-50} styles={"md:text-7xl text-4xl text-gray-900 font-medium title-font mb-2 md:w-2/5 text-yellow-400"} speed={1000} to={0} repeat={false}>
-                                <h1 className="">Services</h1>
-                            </ViewDetectAnimation>
-                            <div className="md:w-3/5 md:pl-6">
-                                <ViewDetectAnimation direction={"Y"} speed={0} styles={"mb-10"} level={0} to={0} repeat={false}>
-                                    <p className="leading-relaxed md:text-xl text-base">At VIRDICON, we believe in fostering strong relationships with our clients, partners, and stakeholders. We prioritize open communication, transparency, and collaboration throughout the project lifecycle. Our customer-centric approach enables us to understand and fulfill the unique needs of each client, resulting in successful project outcomes and long-lasting partnerships.</p>
-                                </ViewDetectAnimation>
-                                <ViewDetectAnimation direction={"Y"} speed={0} styles={"mb-10"} level={0} to={0} repeat={false}>
-                                    <p className="leading-relaxed md:text-xl text-base">As we continue to grow and expand our services, VIRDICON maintains its core values of integrity, professionalism, and customer-centricity. We are dedicated to making a positive impact in the construction industry and contributing to the development of sustainable and resilient communities.</p>
-                                </ViewDetectAnimation>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </ParallaxLayer>
-
-            <ParallaxLayer
-                offset={1.6}
-                speed={0.4}
-                factor={0.4}>
-                <div className="container mx-auto">
-                    <ViewDetectAnimation direction={"Y"} speed={1000} styles={"hidden md:block mt-32 text-center"} level={-100} to={100} repeat={false}>
-                        <p className="leading-relaxed md:text-xl text-base mb-10"> VIRDICONLtd.’s track record includes
+                factor={0.4}
+                className="md:mt-40 mt-32">
+               
+               <div className="container mx-auto md:px-6">
+                <section className=" flex flex-col">
+                    <ViewDetectAnimation direction={"X"} speed={500} styles={''} level={-10} to={0} repeat={true}>
+                        <h1 className="mb-4 md:text-5xl text-3xl text-center text-yellow-400 font-bold">
+                            Services
+                        </h1>
+                    </ViewDetectAnimation>
+                    <ViewDetectAnimation direction={"Y"} speed={1000} styles={'hidden md:block'} level={50} to={0} repeat={false}>
+                        <p className="mb-6 md:text-xl text-center">
+                            As we continue to grow and expand our services, VIRDICON maintains its core values of integrity, professionalism, and customer-centricity. We are dedicated to making a positive impact in the construction industry and contributing to the development of sustainable and resilient communities.
+                        </p>
+                    </ViewDetectAnimation>
+                    <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={true}>
+                        <p className="mb-6 text-center  md:text-xl">
+                            VIRDICONLtd.’s track record includes
                             successful implementation of services
                             wherever required. We offer the complete
                             package from project procurement,
                             construction, through to completion
-                            as detailed below.</p>
-                            <ScrollButton to={2} page={parallax} parallaxEffect={true} target={null} customCss={" "}></ScrollButton>
+                            as detailed below.
+                        </p>
                     </ViewDetectAnimation>
-                </div>
+                </section>
+            </div>
             </ParallaxLayer>
 
             {services.map((item, index) => (
                 <ParallaxLayer
                     key={index}
-                    offset={1 + index + 1}
+                    offset={1 + index}
                     speed={0.2}
-                    sticky={{ start: 1 + index + 1, end: 1.5 + index + 1 }}
+                    sticky={{ start: 1 + index , end: 1.5 + index }}
                     className="block md:hidden">
                     <div className="flex flex-col justify-center items-center h-full text-sm font-light  ">
                         <ViewDetectAnimation to={0} direction={"Y"} styles={""} speed={0} level={0} repeat={false}>
@@ -102,10 +94,10 @@ function Services() {
             {services.map((item, index) => (
                 <ParallaxLayer
                     key={index}
-                    offset={1 + index + 1}
+                    offset={1 + index }
                     speed={0.2}
                     style={{ width: "50%" }}
-                    sticky={{ start: 1 + index + 1, end: 1.5 + index + 1 }}
+                    sticky={{ start: 1 + index , end: 1.5 + index }}
                     className=" hidden md:flex ">
                     <div className=" hidden md:flex justify-start items-center h-full mr-auto pl-20 lg:text-4xl md:text-2xl  text-sm font-light ">
                         <h1 className="text-black md:p-5 p-2 text-center  bg-white rounded-lg shadow-2xl h-20 md:w-96  w-80">{item.title}</h1>
@@ -114,7 +106,7 @@ function Services() {
             }
             {services.map((item, index) => (
                 <ParallaxLayer key={index}
-                    offset={1.5 + index + 1}
+                    offset={1.5 + index }
                     speed={0.5}
                     style={{ width: "50%" }}
                     className="ml-auto  hidden md:flex z-50 justify-center">
@@ -165,7 +157,7 @@ function Services() {
             {services.map((item, index) =>
                 <ParallaxLayer
                     key={index}
-                    offset={2.4 + index}
+                    offset={1.4 + index}
                     speed={0.2}
                     className={`-z-50`}>
                     <div style={{ backgroundImage: `url(${item.icon})` }} className=" bg-cover bg-center md:w-1/2 h-full ">
@@ -173,7 +165,7 @@ function Services() {
                 </ParallaxLayer>)
             }
             <ParallaxLayer
-                offset={6.5}
+                offset={5.5}
                 speed={0.2}>
                 <div className="flex h-full w-full items-end">
                     <Footer />

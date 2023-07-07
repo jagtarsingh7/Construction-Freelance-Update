@@ -7,7 +7,7 @@ function Trophy() {
     const [trophyRef, trophyAnimated] = useInView()
     return (
         <div className='flex items-start'>
-            <section ref={trophyRef} id="trophy" className="bg-white  w-full">
+            <section ref={trophyRef} id="trophy" className="bg-white w-full">
                 <div className="mx-auto w-full px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                     <div className="mx-auto max-w-3xl text-center">
                         <ViewDetectAnimation direction={"Y"} speed={2000}  styles={""} level={0} to={0} repeat={false} >
@@ -19,7 +19,7 @@ function Trophy() {
                     </div>
                     <div className="mt-8 sm:mt-12">
                         <dl
-                            className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-100">
+                            className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:divide-x sm:divide-gray-200">
                             <div className="flex flex-col px-4 py-8 text-center">
                                 <dt className="order-last text-lg font-medium text-gray-500">
                                     Completed Projects

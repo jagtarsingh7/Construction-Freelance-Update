@@ -52,10 +52,10 @@ export default function Banner(props: IBannerProp) {
                     className={customCssOuter ? (customCssOuter) : (`flex flex-col items-center relative pt-32 h-full`)}
                 >
                     {heading && <animated.div style={animateSpring1}>
-                        <h1 className={`${customCss1 ? (customCss1) : ('xl:text-7xl md:text-5xl p-5 text-3xl underline text-center font-serif mb-20 text-white')}`}>{heading}</h1>
+                        <h1 className={`${customCss1 ? (customCss1) : ('xl:text-7xl md:text-5xl  text-3xl underline text-center font-serif mb-20 text-white')}`}>{heading}</h1>
                     </animated.div>}
                     {subHeading && <animated.div style={animateSpring2}>
-                        <p className={`${customCss2 ? (customCss2) : ('md:border-8 border-4 md:p-10 md:px-8 p-12 text-center border-yellow-300 xl:text-4xl text-white  md:text-3xl text-xl font-medium mb-20 mt-10')}`}>{subHeading}</p>
+                        <p className={`${customCss2 ? (customCss2) : ('md:border-8 border-4 md:p-10 md:px-12 p-5 text-center border-yellow-300 xl:text-4xl text-white  md:text-3xl text-xl font-medium mb-20 mt-10')}`}>{subHeading}</p>
                     </animated.div>}
                     {
                         (childrenArray.length >= 1 && (heading || subHeading)) ?(<animated.div style={animateSpring3} >{childrenArray.map((child, index) => (<div key={index}>{child}</div>))} </animated.div>):(childrenArray.map((child, index) => (<div key={index}>{child}</div>)))
@@ -71,7 +71,7 @@ export default function Banner(props: IBannerProp) {
                     {subHeading && <animated.div style={animateSpring2}>
                         <p className={`${customCss2 ? (customCss2) : ('md:border-8 border-4 md:p-10 md:px-8 p-12 text-center border-yellow-300 xl:text-4xl text-white  md:text-3xl text-xl font-medium mb-20 mt-10')}`}>{subHeading}</p>
                     </animated.div>}
-                    {
+                    { 
                         (childrenArray.length >= 1 && (heading || subHeading)) ?(<animated.div style={animateSpring3} >{childrenArray.map((child, index) => (<div key={index}>{child}</div>))} </animated.div>):(childrenArray.map((child, index) => (<div key={index}>{child}</div>)))
                     }
                 </div>
