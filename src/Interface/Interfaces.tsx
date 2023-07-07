@@ -13,8 +13,8 @@ export interface IViewDetectAnimationProp {
 
 export interface IBannerProp {
   parallaxEffect: boolean,
-  heading: string,
-  subHeading: string,
+  heading: string |null,
+  subHeading: string | null,
   direction1: string,
   direction2: string,
   speed1: number,
@@ -23,6 +23,7 @@ export interface IBannerProp {
   level2: number,
   customCss1: string | null,
   customCss2: string | null,
+  customCssOuter:string | null,
   backgroundImageName:string,
   extraLayer:boolean,
   children: ReactNode | ReactNode[],
@@ -43,7 +44,8 @@ export interface IScrollButtonProp {
   to: number,
   page?:  React.MutableRefObject<IParallax > | null
   parallaxEffect:boolean,
-  target?:React.RefObject<HTMLDivElement> | null
+  target?:React.RefObject<HTMLDivElement> | null,
+  customCss:string | null
 }
 
 export interface IFeatureCardsProp {

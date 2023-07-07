@@ -19,7 +19,7 @@ function CoreValues() {
         </ViewDetectAnimation>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8 md:p-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-9 md:p-10 ">
         {values.map((service, index) => (
           <>
             <ViewDetectAnimation direction={"Y"} styles="hidden md:flex" speed={0} level={0} to={0} repeat={false}>

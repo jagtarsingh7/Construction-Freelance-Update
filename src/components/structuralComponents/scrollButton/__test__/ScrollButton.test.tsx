@@ -23,7 +23,8 @@ describe('ScrollButton', () => {
     to: 100,
     page: pageRef as unknown as React.MutableRefObject<IParallax>,
     parallaxEffect: true,
-    target: targetRef as unknown as  React.RefObject<HTMLDivElement>,
+    target: targetRef as unknown as React.RefObject<HTMLDivElement>,
+    customCss: null
   };
 
   afterEach(() => {
