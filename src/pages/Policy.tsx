@@ -1,8 +1,3 @@
-// import site2 from "../images/site2.jpg";
-// import worker2 from "../images/worker2.jpg";
-// import worker1 from "../images/worker1.jpg";
-// import worker3 from "../images/worker3.jpg";
-// import policy from "../images/policy.jpg";
 import policies from "../data/policies.json"
 import { useRef } from "react";
 import ScrollButton from "../components/structuralComponents/scrollButton/ScrollButton";
@@ -20,8 +15,8 @@ function Policy() {
         parallaxEffect={false} heading={null} subHeading={null} direction1={"X"} direction2={""} speed1={500} speed2={0} level1={-50} level2={0}
         customCssOuter={"py-8 px-4 mx-auto max-w-screen-xl min-h-screen  sm:py-16 lg:px-6"} customCss2={null} backgroundImageName={"site2.jpg"} extraLayer={false} customCss1={null} >
         <div className="max-w-screen-md mt-20">
-          <ViewDetectAnimation direction={"X"} speed={1000} level={-50} styles={""} to={0} repeat={false}>
-            <h2 className="mb-4 md:text-5xl text-3xl tracking-tight font-extrabold text-white dark:text-white">Quality Assurance Health & Safety policy</h2>
+          <ViewDetectAnimation direction={"X"} speed={1000} level={-10} styles={""} to={0} repeat={false}>
+            <h2 className="mb-4 md:text-5xl text-3xl tracking-tight font-extrabold text-white">Quality Assurance Health & Safety policy</h2>
           </ViewDetectAnimation>
           <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false} >
             <p className=" font-light sm:text text-gray-100">Elevating Standards: Unwavering Dedication to Quality Assurance, Health, and Safety for Uncompromising Excellence.</p>
@@ -35,16 +30,16 @@ function Policy() {
       <div
         ref={page}
         className="container mx-auto mt-10">
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-            <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-              <ViewDetectAnimation direction={"X"} speed={1000} level={-50} styles={""} to={0} repeat={false}>
-                <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">{policiesValues[0].title}</h2>
+            <div className="max-w-screen-lg text-gray-500 sm:text-lg ">
+              <ViewDetectAnimation direction={"X"} speed={1000} level={-10} styles={""} to={0} repeat={true}>
+                <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">{policiesValues[0].title}</h2>
               </ViewDetectAnimation>
-              <ViewDetectAnimation direction={"X"} speed={1000} level={-50} styles={""} to={0} repeat={false}>
+              <ViewDetectAnimation direction={"Y"} speed={500} level={50} styles={""} to={0} repeat={false}>
                 <p className="mb-4 font-light">{policiesValues[0].description1}</p>
               </ViewDetectAnimation>
-              <ViewDetectAnimation direction={"X"} speed={1000} level={-50} styles={""} to={0} repeat={false}>
+              <ViewDetectAnimation direction={"Y"} speed={1000} level={50} styles={""} to={0} repeat={false}>
                 <p className="mb-4 font-light">{policiesValues[0].description2}</p>
               </ViewDetectAnimation>
             </div>
@@ -71,11 +66,8 @@ function Policy() {
               </ViewDetectAnimation>
             </div>
           </div>
-          <ViewDetectAnimation direction={"X"} level={50} styles={""} speed={0} to={0} repeat={false}>
-            <img
-              alt="Student"
-              src={""}
-              className="h-56 w-full object-cover sm:h-full" />
+          <ViewDetectAnimation direction={"X"} level={20} styles={""} speed={500} to={0} repeat={true}>
+            <img alt="image" src={"/images/policy.jpg"} className="h-56 w-full object-cover sm:h-full" />
           </ViewDetectAnimation>
         </section>
       </div>
@@ -88,7 +80,7 @@ function Policy() {
                 index >= 2 && index < policiesValues.length - 4 &&
                 <div className="py-8 flex flex-wrap md:flex-nowrap">
                   <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                    <ViewDetectAnimation direction={"X"} level={-50} speed={100} styles={""} to={0} repeat={false}>
+                    <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
                       <span className="font-semibold title-font text-gray-700">{item.title}</span>
                     </ViewDetectAnimation>
                   </div>
@@ -108,24 +100,24 @@ function Policy() {
       </div>
 
       <div className="container mx-auto m-20">
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white ">
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <ViewDetectAnimation direction={"X"} level={-100} speed={100} styles={""} to={0} repeat={false}>
-                <img className="w-full rounded-lg" src={""} alt="office content 1" />
+              <ViewDetectAnimation direction={"X"} level={-10} speed={500} styles={""} to={0} repeat={true}>
+                <img className="w-full rounded-lg" src={"/images/worker1.jpg"} alt="content 1" />
               </ViewDetectAnimation>
-              <ViewDetectAnimation direction={"y"} speed={100} styles={""} level={0} to={0} repeat={false}>
-                <img className="mt-4 w-full lg:mt-10 rounded-lg" src={""} alt="office content 2" />
-              </ViewDetectAnimation>
+             
+                <img className="mt-4 w-full lg:mt-10 rounded-lg" src={"/images/client.jpg"} alt="content 2" />
+           
             </div>
-            <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <ViewDetectAnimation direction={"Y"} level={10} speed={100} styles={""} to={0} repeat={false}>
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{policies[5].title}</h2>
-              </ViewDetectAnimation>
-              <ViewDetectAnimation direction={"Y"} speed={100} styles={""} level={0} to={0} repeat={false}>
+            <div className="font-light text-gray-500 sm:text-lg ">
+            <ViewDetectAnimation direction={"X"} speed={500} styles={""} level={10} to={0} repeat={false}>
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">{policies[5].title}</h2>
+                </ViewDetectAnimation>
+              <ViewDetectAnimation direction={"Y"} speed={1000} styles={""} level={10} to={0} repeat={false}>
                 <p className="mb-4">{policies[5].description1}.</p>
               </ViewDetectAnimation>
-              <ViewDetectAnimation direction={"Y"} speed={100} styles={""} level={0} to={0} repeat={false}>
+              <ViewDetectAnimation direction={"Y"} speed={1000} styles={""} level={20} to={0} repeat={false}>
                 <p>{policies[5].description2}</p>
               </ViewDetectAnimation>
             </div>

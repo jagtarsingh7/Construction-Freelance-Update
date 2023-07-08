@@ -1,13 +1,16 @@
-import { useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ScrollButton from "../components/structuralComponents/scrollButton/ScrollButton";
 import Banner from "../components/structuralComponents/banner/Banner";
 import services from "../data/services.json"
 import ViewDetectAnimation from "../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
 import Footer from "../components/structuralComponents/footer/Footer";
+import MyContext from "../context/MyContext";
 
 function Services() {
     const parallax = useRef<IParallax>(null!)
+    const {subHead } = useContext(MyContext)
+    useEffect(()=>{parallax.current.scrollTo(subHead)},[subHead])
     return (
         <Parallax
             pages={6.4}
@@ -15,7 +18,7 @@ function Services() {
             className="bg-white">
 
             <Banner
-                parallaxEffect={true} heading={"Engineering Services"} subHeading={"Building the Future with Engineering"} direction1={"Y"} direction2={"Y"} speed1={500} speed2={500} level1={50} level2={-50}
+                parallaxEffect={true} heading={"Engineering Services"} subHeading={"Building the Future with Engineering"} direction1={"Y"} direction2={"Y"} speed1={1000} speed2={500} level1={50} level2={-30}
                 backgroundImageName={"site4.jpg"} extraLayer={false} customCss1={"underline text-white text-center md:border-8 border-4 lg:px-48 lg:p-24 md:p-14 p-6 hover:shadow-2xl shadow-inner  border-black z-20 bg-gray-100 bg-opacity-10 lg:text-7xl md:text-5xl  text-2xl font-serif"}
                 customCss2={"mt-24 text-white text-center md:text-3xl text-xl underline font-serif"} customCssOuter={"flex flex-col justify-center items-center z-10"} >
                 <ScrollButton to={1} page={parallax} parallaxEffect={true} target={null} customCss={null}></ScrollButton>

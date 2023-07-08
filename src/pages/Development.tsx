@@ -6,10 +6,8 @@ import Footer from "../components/structuralComponents/footer/Footer";
 import Banner from "../components/structuralComponents/banner/Banner";
 
 function Development() {
-
   const targetRef = useRef(null);
   const developmentValues = Object.values(development)
-
   return (
     <div className="bg-white mx-auto ">
 
@@ -54,7 +52,7 @@ function Development() {
                   <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
                     <img
                       alt="Party"
-                      src={"/images/project1.jpg"}
+                      src={"/images/projects/1.jpeg"}
                       className="absolute inset-0 h-full w-full object-cover" />
                   </div>
                   <div className="lg:py-16">
@@ -69,11 +67,11 @@ function Development() {
               </div>
             </section>
 
-            <section className="bg-white dark:bg-gray-900">
+            <section className="bg-white">
               <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div className="font-light text-gray-500 sm:text-lg ">
                   <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
-                    <h2 className="mb-4 md:text-5xl text-2xl  tracking-tight font-extrabold text-gray-900 dark:text-white">  {developmentValues[1].title}</h2>
+                    <h2 className="mb-4 md:text-5xl text-2xl  tracking-tight font-extrabold text-gray-900 ">  {developmentValues[1].title}</h2>
                   </ViewDetectAnimation>
                   <ViewDetectAnimation direction={"Y"} speed={1000} styles={""} level={0} to={0} repeat={false}>
                     <p className="mb-4">{developmentValues[0].description1}. {developmentValues[0].description2}</p>
@@ -81,20 +79,20 @@ function Development() {
                 </div>
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <ViewDetectAnimation direction={"X"} level={-50} repeat={true} styles={""} speed={0} to={0} >
-                    <img className="w-full rounded-lg" src={""} alt="office content 1" />
+                    <img className="w-full rounded-lg" src={"/images/service4.jpg"} alt="content 1" />
                   </ViewDetectAnimation>
                   <ViewDetectAnimation direction={"Y"} repeat={true} styles={""} speed={0} level={0} to={0} >
-                    <img className="mt-4 w-full lg:mt-10 rounded-lg" src={""} alt="office content 2" />
+                    <img className="mt-4 w-full lg:mt-10 rounded-lg" src={"/images/worker1.jpg"} alt="office content 2" />
                   </ViewDetectAnimation>
                 </div>
               </div>
             </section>
 
-            <section className="bg-white dark:bg-gray-900">
+            <section className="bg-white">
               <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-                <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
+                <div className="max-w-screen-lg sm:text-lg ">
                   <ViewDetectAnimation direction={"X"} level={-10} styles={""} speed={0} to={0} repeat={false}>
-                    <h2 className="mb-4 md:text-5xl text-2xl  tracking-tight font-bold text-gray-900 dark:text-white">{developmentValues[2].title}: Empowering <span className="font-extrabold"> 20+</span> ventures</h2>
+                    <h2 className="mb-4 md:text-5xl text-2xl  tracking-tight font-bold text-gray-900 ">{developmentValues[2].title}: <span className="font-extrabold"> 20+</span> ventures</h2>
                   </ViewDetectAnimation>
                   <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
                     <p className="mb-4 font-light">{developmentValues[2].description1}</p>
@@ -147,19 +145,19 @@ function Development() {
               </div>
             </section>
 
-            <section className="bg-white dark:bg-gray-900">
+            <section className="bg-white">
               <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                 <div className="grid grid-cols-2 gap-4 mt-8">
-                  <ViewDetectAnimation direction={"Y"} level={-50} speed={1000} styles={""} to={0} repeat={false}>
-                    <img className="w-full rounded-lg" src={"/images/project1.jpg"} alt="office content 1" />
+                  <ViewDetectAnimation direction={"Y"} level={-50} speed={1000} styles={""} to={0} repeat={true}>
+                    <img className="w-full rounded-lg" src={"/images/projects/9.jpeg"} alt="content 1" />
                   </ViewDetectAnimation>
-                  <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
-                    <img className="mt-4 w-full lg:mt-10 rounded-lg" src={"/images/project1.jpg"} alt="office content 2" />
+                  <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={true}>
+                    <img className="mt-4 w-full lg:mt-10 rounded-lg" src={"/images/projects/3.jpeg"} alt="content 2" />
                   </ViewDetectAnimation>
                 </div>
-                <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
+                <div className="font-light text-gray-500 sm:text-lg ">
                   <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{developmentValues[8].title}</h2>
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">{developmentValues[8].title}</h2>
                   </ViewDetectAnimation>
                   <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
                     <p className="mb-4">{developmentValues[8].description1}</p>

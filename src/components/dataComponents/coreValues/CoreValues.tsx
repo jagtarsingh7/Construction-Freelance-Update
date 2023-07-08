@@ -5,8 +5,8 @@ function CoreValues() {
 
   return (
     <div className="bg-white flex flex-col items-center justify-end  mt-5 px-5 ">
-      <div className="max-w-5xl flex flex-col items-center mt-10 ">
-        <ViewDetectAnimation direction={"X"} level={-20} speed={500} styles={"border-b-2 mx-auto  font-extrabold md:text-4xl text-3xl mb-4 text-yellow-300 font-serif"} to={0} repeat={false}>
+      <div className="max-w-5xl flex flex-col items-center  ">
+        <ViewDetectAnimation direction={"X"} level={-20} speed={500} styles={"border-b-2 mx-auto  font-extrabold md:text-4xl text-3xl mb-4 text-yellow-300 font-serif"} to={0} repeat={true}>
           <h1 > Background</h1>
         </ViewDetectAnimation>
         <ViewDetectAnimation direction={"Y"}  styles={"md:mt-10 mt-5"} speed={0} level={0} to={0} repeat={false}>
@@ -22,10 +22,12 @@ function CoreValues() {
       <div className="grid grid-cols-1 md:grid-cols-3 md:gap-9 md:p-10 ">
         {values.map((service, index) => (
           <>
-            <ViewDetectAnimation direction={"Y"} styles="hidden md:flex" speed={0} level={0} to={0} repeat={false}>
+            <ViewDetectAnimation direction={"Y"} styles="hidden md:flex" speed={0} level={0} to={0} repeat={true}>
               <div key={index} className="p-8 bg-white shadow-lg hover:shadow-xl rounded-xl">
                 <h3 className="text-xl font-semibold mb-2 text-yellow-300">{service.title}</h3>
+                <ViewDetectAnimation direction={"Y"} styles="hidden md:flex" speed={0} level={0} to={0} repeat={false}>
                 <p className="text-gray-600">{service.description}</p>
+                </ViewDetectAnimation>
               </div>
             </ViewDetectAnimation>
             <ViewDetectAnimation direction={"Y"} styles="md:hidden block bg-white" speed={0} level={0} to={0} repeat={false} >

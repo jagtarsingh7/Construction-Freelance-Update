@@ -12,8 +12,9 @@ import ViewDetectAnimation from "../components/animationComponents/viewDetectAni
 function Home() {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-            setLoading(false)
+        setLoading(false)
     }, [])
+
     return (
         loading ? (<LoadingView />) : (
             <Parallax
@@ -22,8 +23,8 @@ function Home() {
                 style={{ minHeight: "50rem" }}>
 
                 <Banner
-                    parallaxEffect={true} heading={"We build the future with passion"} subHeading={"Virdicon"} direction1={"X"} direction2={"Y"}
-                    backgroundImageName={"site1.jpg"} extraLayer={true} speed1={500} speed2={1000} level1={-50} level2={100} customCss1={null} customCss2={null} customCssOuter={null} >
+                    parallaxEffect={true} heading={"We build the future with passion"} subHeading={"Virdicon"} direction1={"Y"} direction2={"Y"}
+                    backgroundImageName={"site1.jpg"} extraLayer={true} speed1={1500} speed2={1000} level1={50} level2={20} customCss1={null} customCss2={null} customCssOuter={null} >
                     <FeatureCards />
                 </Banner>
 
@@ -45,7 +46,7 @@ function Home() {
                     <div className="bg-white  ">
                         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
                             <div className="max-w-screen-lg text-black sm:text-lg ">
-                                <ViewDetectAnimation direction={"X"} level={-10} styles={""} speed={0} to={0} repeat={false}>
+                                <ViewDetectAnimation direction={"X"} level={-10} styles={""} speed={0} to={0} repeat={true}>
                                     <h2 className="mb-4 md:text-5xl text-2xl  tracking-tight font-bold text-gray-900 ">Empowering<span className="font-extrabold"> 20+</span> ventures</h2>
                                 </ViewDetectAnimation>
                                 <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
@@ -55,7 +56,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className=" bg-contain bg-center mb-1" style={{ backgroundImage: `url(${'https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif'})` }}>
+                    <div className=" bg-contain bg-center mb-1 bg-[url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif')]" >
                         <QuoteForm />
                     </div>
                 </ParallaxLayer>
@@ -64,27 +65,23 @@ function Home() {
                     offset={3}
                     speed={0.7}
                     factor={1}
-                    className="flex flex-col-reverse justify-between">
-                    <Footer />
-                    <div className=" md:flex flex-col items-center hidden container mx-auto md:px-6 mt-40 ">
-                        <section className=" flex flex-col">
-                            <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={-50} to={0} repeat={true}>
-                                <h1 className="mb-4 md:text-5xl text-3xl text-center text-yellow-400 font-bold">
-                                    Community Engagement
-                                </h1>
-                            </ViewDetectAnimation>
-                            <ViewDetectAnimation direction={"Y"} speed={1000} styles={'hidden md:block'} level={50} to={0} repeat={false}>
-                                <p className="mb-6 md:text-xl text-center">
-                                    As we continue to grow and expand our services, VIRDICON maintains its core values of integrity, professionalism, and customer-centricity. We are dedicated to making a positive impact in the construction industry and contributing to the development of sustainable and resilient communities.
-                                </p>
-                            </ViewDetectAnimation>
-                            <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={true}>
-                                <p className="mb-6 text-center  md:text-xl">
-                                    We participate in community development initiatives, support local businesses, and prioritize sustainable and inclusive growth. Follow us
-                                </p>
-                            </ViewDetectAnimation>
-                        </section>
-                        <span className=" mt-2 inline-flex">
+                    className="-z-20">
+                    <div className="flex h-full flex-col justify-between bg-cover bg-center ">
+                        <div className=" md:flex flex-col items-center hidden container mx-auto md:px-6 mt-40 ">
+                            <section className="flex flex-col">
+                                <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={-50} to={0} repeat={true}>
+                                    <h1 className="mb-4 md:text-5xl text-3xl text-center text-yellow-400 font-bold">
+                                        Community Engagement
+                                    </h1>
+                                </ViewDetectAnimation>
+                                <ViewDetectAnimation direction={"Y"} speed={1000} styles={'hidden md:block'} level={50} to={0} repeat={false}>
+                                    <p className="mb-6 md:text-xl text-center">As we continue to grow and expand our services, VIRDICON maintains its core values of integrity, professionalism, and customer-centricity. We are dedicated to making a positive impact in the construction industry and contributing to the development of sustainable and resilient communities.</p>
+                                </ViewDetectAnimation>
+                                <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={true}>
+                                    <p className="mb-6 text-center  md:text-xl">We participate in community development initiatives, support local businesses, and prioritize sustainable and inclusive growth. Follow us</p>
+                                </ViewDetectAnimation>
+                            </section>
+                            <span className=" mt-2 inline-flex">
                                 <a className="text-gray-500" href="https://www.facebook.com/">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-5 h-5" viewBox="0 0 24 24">
                                         <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -101,9 +98,11 @@ function Home() {
                                     </svg>
                                 </a>
                             </span>
+                        </div>
+                        <div className="md:hidden h-full bg-contain bg-center mb-1 bg-[url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif')] "></div>
+                        <Footer />
                     </div>
                 </ParallaxLayer>
-            </Parallax>)
-    );
+            </Parallax>));
 }
 export default Home;

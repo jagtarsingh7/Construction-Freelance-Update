@@ -7,13 +7,13 @@ export interface IViewDetectAnimationProp {
   styles: string,
   speed: number,
   level: number,
-  to:number,
+  to: number,
   repeat: boolean,
 }
 
 export interface IBannerProp {
   parallaxEffect: boolean,
-  heading: string |null,
+  heading: string | null,
   subHeading: string | null,
   direction1: string,
   direction2: string,
@@ -23,31 +23,41 @@ export interface IBannerProp {
   level2: number,
   customCss1: string | null,
   customCss2: string | null,
-  customCssOuter:string | null,
-  backgroundImageName:string,
-  extraLayer:boolean,
+  customCssOuter: string | null,
+  backgroundImageName: string,
+  extraLayer: boolean,
   children: ReactNode | ReactNode[],
 }
-export interface ICountUp{
 
- end:number,
- duration:number
-
+export interface ICountUp {
+  end: number,
+  duration: number
 }
 
-export interface IMyContext{
-  setSubHead:any,
-  subHead:any
+export interface IMyContext {
+  subHead: number,
+  setSubHead: (subHead: number) => void
 }
 
 export interface IScrollButtonProp {
   to: number,
-  page?:  React.MutableRefObject<IParallax > | null
-  parallaxEffect:boolean,
-  target?:React.RefObject<HTMLDivElement> | null,
-  customCss:string | null
+  page?: React.MutableRefObject<IParallax> | null
+  parallaxEffect: boolean,
+  target?: React.RefObject<HTMLDivElement> | null,
+  customCss: string | null
 }
 
 export interface IFeatureCardsProp {
- absolutePosition:boolean
+  absolutePosition: boolean
+}
+
+export interface IPortfolioPage {
+  reff: React.MutableRefObject<IParallax>
+  location: {
+    location: string,
+    status: string,
+    flag: string
+  },
+  offset: number,
+  image: string
 }

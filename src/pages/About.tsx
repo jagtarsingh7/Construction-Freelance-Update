@@ -13,7 +13,7 @@ function About() {
   return (
     <div className="bg-white">
       <Banner
-        parallaxEffect={false} heading={"About the Company"} subHeading={"Building the Future with Engineering"} direction1={""} direction2={""} speed1={0} speed2={0} level1={0} level2={0}
+        parallaxEffect={false} heading={"About the Company"} subHeading={"Building the Future with Engineering"} direction1={"Y"} direction2={"Y"} speed1={1000} speed2={500} level1={50} level2={20}
         customCss1={"underline text-white text-center md:border-8 border-4 lg:px-48 lg:p-24 md:p-14 p-6 hover:shadow-2xl shadow-inner  border-black z-20 bg-gray-100 bg-opacity-10   lg:text-7xl md:text-5xl  text-2xl font-serif "} customCss2={"mt-24 text-white text-center md:text-3xl text-xl underline font-serif"}
         customCssOuter={"flex flex-col justify-center items-center z-10 h-screen"} backgroundImageName={"service3.jpg"} extraLayer={false} >
         <ScrollButton to={1} target={target} parallaxEffect={false} customCss={null} ></ScrollButton>
@@ -21,48 +21,48 @@ function About() {
 
       <div ref={target} className="container my-24 mx-auto md:px-6">
         <section className="mb-32">
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <h1 className="mb-4 text-3xl font-bold">
               {company.title}
             </h1>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p className="mb-6">
               {company.description1}
             </p>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p className="mb-6">
               <strong> {company.description2}</strong>
             </p>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p className="mb-6">
               {company.description3}
             </p>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p
-              className="mb-6 rounded border-l-4 border-neutral-800 bg-neutral-100 p-2 dark:border-neutral-200 dark:bg-neutral-700">
+              className="mb-6 rounded border-l-4 border-neutral-800 bg-neutral-100 p-2  ">
               <strong>Note:</strong>{company.description3}
             </p>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p className="mb-6">
               {company.description4}
             </p>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
-            <img src={"/images/service3.jpg"}
-              className="mb-6 w-full rounded-lg shadow-lg dark:shadow-black/20" alt="" />
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={true}>
+            <img src={"/images/projects/6.jpeg"}
+              className="mb-6 w-full rounded-lg shadow-lg " alt="" />
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <ul className="mb-6 list-inside list-disc">
               <li>{company.description6}</li>
               <li>{company.description7}</li>
             </ul>
           </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+          <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
             <p>
               {company.description8}
             </p>
@@ -73,13 +73,14 @@ function About() {
         <div className="container px-5 py-24 mx-auto">
           <div className='flex flex-col text-center w-full mb-20'>
             <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">OUR TEAM</h1>
-            <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+            <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">{company.description10}</p>
             </ViewDetectAnimation>
           </div>
           <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+              <div className="flex flex-col items-center text-center">
+              <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">{membersValues[0].name}</h2>
                 <p className="leading-relaxed text-base">{membersValues[0].designation}</p>
                 <p className="leading-relaxed text-base">{membersValues[0].phone}</p>
@@ -101,11 +102,13 @@ function About() {
                   </svg>
                 </a>
               </span>
+              </div>
             </div>
           </div>
           <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+            <div className="flex flex-col items-center text-center">
+              <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">{membersValues[2].name}</h2>
                 <p className="leading-relaxed text-base">{membersValues[2].designation}</p>
                 <p className="leading-relaxed text-base">{membersValues[2].phone}</p>
@@ -127,11 +130,13 @@ function About() {
                   </svg>
                 </a>
               </span>
+              </div>
             </div>
           </div>
           <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
             <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={0} to={0} repeat={false}>
+            <div className="flex flex-col items-center text-center">
+              <ViewDetectAnimation direction={"Y"} speed={500} styles={''} level={0} to={0} repeat={false}>
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-2">{membersValues[1].name}</h2>
                 <p className="leading-relaxed text-base">{membersValues[1].designation}</p>
                 <p className="leading-relaxed text-base">{membersValues[1].phone}</p>
@@ -153,6 +158,7 @@ function About() {
                   </svg>
                 </a>
               </span>
+              </div>
             </div>
           </div>
         </div>

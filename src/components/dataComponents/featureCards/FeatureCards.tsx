@@ -6,12 +6,10 @@ const FeatureCards = () => {
 
  
   return (
-   
     <div className="mt-14 container  md:bg-transparent bg-white ">
       <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 md:p-0 p-5 mx-auto">
         {features.map((item, index) => (
           <Link to="/development">
-          <ViewDetectAnimation direction={"Y"} speed={500 * (index * 1)} level={15 * (index + 1)} styles={""} repeat={true} to={0}>
             <div key={index} className=" overflow-hidden rounded-lg shadow transition md:hover:shadow-lg text-center  ">
               <img
                 alt={item.title}
@@ -29,12 +27,10 @@ const FeatureCards = () => {
                 </ViewDetectAnimation>
               </div>
             </div>
-          </ViewDetectAnimation>
-          </Link>
+        </Link>
         ))}
       </div>
     </div> 
- 
   );
 };
 

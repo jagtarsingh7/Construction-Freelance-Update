@@ -1,11 +1,10 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../images/logo.png"
 import MyContext from '../../../context/MyContext';
 function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSubMenuOpen, setIsSubMenuOpen] = useState(true);
-    const { setSubHead } = useContext(MyContext)
+    const {setSubHead } = useContext(MyContext)
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     }

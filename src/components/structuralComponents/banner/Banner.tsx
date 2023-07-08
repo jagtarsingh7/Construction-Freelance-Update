@@ -5,7 +5,7 @@ import { IBannerProp } from '../../../Interface/Interfaces';
 
 export default function Banner(props: IBannerProp) {
 
-    const { parallaxEffect, extraLayer, heading, subHeading, backgroundImageName, children, customCss1, customCss2, speed1, speed2, level1, level2, customCssOuter } = props
+    const { parallaxEffect, extraLayer, heading, subHeading, backgroundImageName, children, customCss1, customCss2, speed1, speed2, level1, level2, customCssOuter,direction1,direction2 } = props
     const childrenArray = Children.toArray(children);
     const propAnimation1 = useSpringRef()
     const propAnimation2 = useSpringRef()
@@ -13,16 +13,16 @@ export default function Banner(props: IBannerProp) {
 
     const animateSpring1 = useSpring({
         ref: propAnimation1,
-        to: { opacity: 1, transform: `translateY(0)` },
-        from: { opacity: 0, transform: `translateY(50%)` },
-        config: { duration: 500 },
+        to: { opacity: 1, transform: `translate${direction1}0)` },
+        from: { opacity: 0, transform: `translate${direction1}(${level1 ? level1 : 50}%)` },
+        config: { duration: speed1? speed1: 500 },
     });
 
     const animateSpring2 = useSpring({
         ref: propAnimation2,
-        to: { opacity: 1, transform: `translateY(10)` },
-        from: { opacity: 0, transform: `translateY(50%)` },
-        config: { duration: 500 },
+        to: { opacity: 1, transform: `translate${direction2}0` },
+        from: { opacity: 0, transform: `translate${direction2}(${level2 ? level2 : 50}%)` },
+        config: { duration: speed2? speed2: 500 },
     })
 
     const animateSpring3 = useSpring({
@@ -63,7 +63,7 @@ export default function Banner(props: IBannerProp) {
                 </ParallaxLayer>
             </>
         ) : (
-            <div className=" bg-cover bg-center" style={{ backgroundImage: `url(/images/${backgroundImageName})` }}>
+            <div className=" bg-cover bg-center h-screen bg-fixed" style={{ backgroundImage: `url(/images/${backgroundImageName})` }}>
                 <div className={customCssOuter ? (customCssOuter) : (`flex flex-col items-center relative pt-32 h-full`)}>
                     {heading && <animated.div style={animateSpring1}>
                         <h1 className={`${customCss1 ? (customCss1) : ('xl:text-7xl md:text-5xl p-5 text-3xl underline text-center font-serif mb-20 text-white')}`}>{heading}</h1>
