@@ -24,7 +24,7 @@ function Home() {
 
                 <Banner
                     parallaxEffect={true} heading={"We build the future with passion"} subHeading={"Virdicon"} direction1={"Y"} direction2={"Y"}
-                    backgroundImageName={"site1.jpg"} extraLayer={true} speed1={1500} speed2={1000} level1={50} level2={20} customCss1={null} customCss2={null} customCssOuter={null} >
+                    backgroundImageName={"site1.jpg"} extraLayer={true} speed1={1000} speed2={500} level1={50} level2={20} customCss1={null} customCss2={null} customCssOuter={null} >
                     <FeatureCards />
                 </Banner>
 
@@ -67,7 +67,7 @@ function Home() {
                     factor={1}
                     className="-z-20">
                     <div className="flex h-full flex-col justify-between bg-cover bg-center ">
-                        <div className=" md:flex flex-col items-center hidden container mx-auto md:px-6 mt-40 ">
+                        <div className=" lg:flex flex-col items-center hidden container mx-auto md:px-6 mt-40 ">
                             <section className="flex flex-col">
                                 <ViewDetectAnimation direction={"Y"} speed={1000} styles={''} level={-50} to={0} repeat={true}>
                                     <h1 className="mb-4 md:text-5xl text-3xl text-center text-yellow-400 font-bold">
@@ -99,7 +99,7 @@ function Home() {
                                 </a>
                             </span>
                         </div>
-                        <div className="md:hidden h-full bg-contain bg-center mb-1 bg-[url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif')] "></div>
+                        <div className="lg:hidden h-full bg-contain bg-center mb-1 bg-[url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif')] "></div>
                         <Footer />
                     </div>
                 </ParallaxLayer>

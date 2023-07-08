@@ -7,7 +7,7 @@ const PorfolioPage = (props:IPortfolioPage) => {
 
   const{ reff, location, offset, image }=props
   const locationData = Object.values(location)
-  const [count, setCount] = useState(offset);
+  const [count] = useState(offset);
   const scroll = (to:number) => {
     if (reff.current) {
       const newPosition = (to + 1) % 10;

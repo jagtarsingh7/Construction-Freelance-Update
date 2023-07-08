@@ -2,7 +2,7 @@
 # Freelance Web App
 https://virdicon.com/
 
-This is a web application built with React that utilizes serverless cloud functions and the Twilio API for text messages. The website is deployed on virdicon.com and includes various animations and parallax effects created using React Spring.
+This is a full-stack web application built with React and TypeScript. It utilizes serverless cloud functions and the Twilio API for text messages. The website is deployed on virdicon.com and includes various animations and parallax effects created using React Spring.
 
 ## Features
 
@@ -10,13 +10,15 @@ This is a web application built with React that utilizes serverless cloud functi
 - Integration with the Twilio API for sending text messages
 - Deployment on virdicon.com for easy access and availability
 - Engaging animations and parallax effects using React Spring
+- Full-stack architecture with React, TypeScript, and Google Firebase Firestore database
+- Context API for state management within the application
 
 ## Technologies Used
 
-- React: A JavaScript library for building user interfaces
-- Serverless: A framework for deploying serverless functions to the cloud
+- React with Typescript: For building user interfaces
+- Serverless: For deploying serverless functions to the cloud
 - Twilio: A cloud communications platform for building SMS, voice, and messaging applications
-- React Spring: A library for creating fluid and interactive animations in React
+- React Spring: For creating fluid and interactive animations in React
 
 # Getting Started with Create React App
 

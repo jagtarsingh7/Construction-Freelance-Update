@@ -66,8 +66,8 @@ function Policy() {
               </ViewDetectAnimation>
             </div>
           </div>
-          <ViewDetectAnimation direction={"X"} level={20} styles={""} speed={500} to={0} repeat={true}>
-            <img alt="image" src={"/images/policy.jpg"} className="h-56 w-full object-cover sm:h-full" />
+          <ViewDetectAnimation direction={"Y"} level={20} styles={""} speed={500} to={0} repeat={true}>
+            <img alt="image policy" src={"/images/policy.jpg"} className="h-56 w-full object-cover sm:h-full" />
           </ViewDetectAnimation>
         </section>
       </div>

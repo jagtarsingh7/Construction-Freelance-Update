@@ -1,7 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { IParallax, Parallax, ParallaxLayer } from '@react-spring/parallax'
-import { useSpring, animated, useTransition } from '@react-spring/web';
 import data from "../data/picsLocationData.json"
 import LoadingView from "../components/animationComponents/loadingView/LoadingView";
 import ViewDetectAnimation from "../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
@@ -15,11 +14,7 @@ function Projects() {
   useEffect(() => {
     setAnimation(true);
   }, [])
-  const props = useSpring({
-    to: { opacity: 1, transform: 'translateY(0)' },
-    from: { opacity: 0, transform: 'translateY(10%)' },
-    config: { duration: 1000 },
-  });
+  
   return (
     animation ? (<Parallax
       className="bg-black"
