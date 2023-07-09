@@ -1,6 +1,5 @@
 import  { useState, useEffect } from 'react';
 
-
 const LogoCarousel = () => {
   const logos = ['/images/client6.png', '/images/client5.jpeg', '/images/client5.jpeg', '/images/client6.png'];
   const [currentLogoIndex, setCurrentLogoIndex] = useState(0);

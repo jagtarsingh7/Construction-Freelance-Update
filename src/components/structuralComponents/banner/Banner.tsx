@@ -1,7 +1,7 @@
+import { IBannerProp } from '@component/Interface/Interfaces';
 import { ParallaxLayer } from '@react-spring/parallax';
 import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { Children } from 'react';
-import { IBannerProp } from '../../../Interface/Interfaces';
 
 export default function Banner(props: IBannerProp) {
 

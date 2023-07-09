@@ -1,5 +1,5 @@
-import { useInView, animated } from "@react-spring/web"
 import { IViewDetectAnimationProp } from "../../../Interface/Interfaces"
+import { useInView, animated } from "@react-spring/web"
 
 export default function ViewDetectAnimation(props:IViewDetectAnimationProp) {
 

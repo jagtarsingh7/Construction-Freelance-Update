@@ -1,5 +1,5 @@
+import ViewDetectAnimation from '../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation';
 import { useState } from 'react';
-import ViewDetectAnimation from '../../animationComponents/viewDetectAnimation/ViewDetectAnimation';
 
 function QuoteForm() {
   const [loading, setloading] = useState(false)
@@ -24,7 +24,7 @@ function QuoteForm() {
     })
       .then(response => response.json())
       .then(data => {
-        alert(`Your message has been successfully reached to us. We will contact you.`)
+        alert(`Thank you for your message. It has been successfully reached to us. We will contact you shortly.`)
         setloading(false)
       })
       .catch(error => {

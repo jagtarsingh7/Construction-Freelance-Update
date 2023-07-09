@@ -1,6 +1,6 @@
-import values from "../../../data/coreValues.json"
-import ViewDetectAnimation from "../../animationComponents/viewDetectAnimation/ViewDetectAnimation";
 
+import ViewDetectAnimation from "../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
+import values from "../../../data/coreValues.json"
 function CoreValues() {
 
   return (

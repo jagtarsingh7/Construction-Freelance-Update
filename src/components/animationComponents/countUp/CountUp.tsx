@@ -1,5 +1,5 @@
+import { ICountUp } from '@component/Interface/Interfaces';
 import { animated, useSpring } from '@react-spring/web';
-import { ICountUp } from '../../../Interface/Interfaces';
 
 const CountUp = (props:ICountUp) => {
   const{ end, duration }=props
