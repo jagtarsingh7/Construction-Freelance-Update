@@ -1,8 +1,7 @@
-import Image from 'next/image'
-import HomePage from './HomePage'
+import HomeClientComponent from './home'
 
 export default function Home() {
   return (
-    <HomePage></HomePage>
+    <HomeClientComponent></HomeClientComponent>
   )
 }

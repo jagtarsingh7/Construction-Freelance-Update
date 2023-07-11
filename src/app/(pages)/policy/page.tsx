@@ -1,35 +1,15 @@
-'use client'
 import policies from "../../../data/policies.json"
-import { useRef } from "react";
-import ScrollButton from "../../../components/structuralComponents/scrollButton/ScrollButton";
-import Banner from "../../../components/structuralComponents/banner/Banner";
 import ViewDetectAnimation from "../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
 import Footer from "../../../components/structuralComponents/footer/Footer";
+import PolicyCLientComponent from "./policy";
 
 function Policy() {
   const policiesValues = Object.values(policies)
-  const page = useRef<HTMLDivElement>(null!)
 
   return (
     <div>
-      <Banner
-        parallaxEffect={false} heading={null} subHeading={null} direction1={"X"} direction2={""} speed1={500} speed2={0} level1={-50} level2={0}
-        customCssOuter={"py-8 px-4 mx-auto max-w-screen-xl min-h-screen  sm:py-16 lg:px-6"} customCss2={null} backgroundImageName={"site2.jpg"} extraLayer={false} customCss1={null} >
-        <div className="max-w-screen-md mt-20">
-          <ViewDetectAnimation direction={"X"} speed={1000} level={-10} styles={""} to={0} repeat={false}>
-            <h2 className="mb-4 md:text-5xl text-3xl tracking-tight font-extrabold text-white">Quality Assurance Health & Safety policy</h2>
-          </ViewDetectAnimation>
-          <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false} >
-            <p className=" font-light sm:text text-gray-100">Elevating Standards: Unwavering Dedication to Quality Assurance, Health, and Safety for Uncompromising Excellence.</p>
-          </ViewDetectAnimation>
-        </div>
-        <div className="flex justify-center items-center  ">
-          <ScrollButton to={1} parallaxEffect={false} target={page} customCss={null}></ScrollButton>
-        </div>
-      </Banner>
-
-      <div
-        ref={page}
+    <PolicyCLientComponent/>
+      <div  
         className="container mx-auto mt-10">
         <section className="bg-white ">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -79,7 +59,7 @@ function Policy() {
             <div className="-my-8 divide-y-2 divide-gray-100">
               {policiesValues.map((item, index) => (
                 index >= 2 && index < policiesValues.length - 4 &&
-                <div className="py-8 flex flex-wrap md:flex-nowrap">
+                <div key={index} className="py-8 flex flex-wrap md:flex-nowrap">
                   <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                     <ViewDetectAnimation direction={"Y"} level={10} speed={500} styles={""} to={0} repeat={false}>
                       <span className="font-semibold title-font text-gray-700">{item.title}</span>

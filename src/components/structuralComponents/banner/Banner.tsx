@@ -1,4 +1,6 @@
-import { IBannerProp } from '@component/Interface/Interfaces';
+'use client'
+
+import { IBannerProp } from '../../../Interface/Interfaces';
 import { ParallaxLayer } from '@react-spring/parallax';
 import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { Children } from 'react';

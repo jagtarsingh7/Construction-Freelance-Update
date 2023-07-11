@@ -1,3 +1,4 @@
+'use client'
 import LogoCarousel from "../logoCarousel/LogoCarousel"
 import { useInView, } from '@react-spring/web';
 import ViewDetectAnimation from "../viewDetectAnimation/ViewDetectAnimation";
@@ -25,7 +26,7 @@ function Trophy() {
                                     Completed Projects
                                 </dt>
                                 <dd className="text-4xl font-extrabold text-yellow-300 md:text-5xl">      
-                                    {trophyAnimated ? (<CountUp  end={120} duration={5} />) : (0)}+
+                                    {trophyAnimated ? (<CountUp  end={120} duration={5} />) : (0)}
                                 </dd>
                             </div>
                             <div className="flex flex-col px-4 py-8 text-center">
@@ -33,7 +34,7 @@ function Trophy() {
                                     Ongoing Projects
                                 </dt>
                                 <dd className="text-4xl font-extrabold text-yellow-300 md:text-5xl">
-                                    {trophyAnimated ? (<CountUp end={30} duration={5} />) : (0)}+
+                                    {trophyAnimated ? (<CountUp end={30} duration={5} />) : (0)}
                                 </dd>
                             </div>
                             <div className="flex flex-col px-4 py-8 text-center">
@@ -41,7 +42,7 @@ function Trophy() {
                                     Recognitions Received
                                 </dt>
                                 <dd className="text-4xl font-extrabold text-yellow-300 md:text-5xl">
-                                    {trophyAnimated ? (<CountUp end={11} duration={5} />) : (0)}+
+                                    {trophyAnimated ? (<CountUp end={11} duration={5} />) : (0)}
                                 </dd>
                             </div>
                         </dl>

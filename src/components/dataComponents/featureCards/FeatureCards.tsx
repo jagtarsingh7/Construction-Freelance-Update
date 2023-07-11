@@ -9,8 +9,8 @@ const FeatureCards = () => {
     <div className="mt-14 container  md:bg-transparent bg-white ">
       <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 md:p-0 p-5 mx-auto">
         {features.map((item, index) => (
-          <Link href="/development">
-            <div key={index} className=" overflow-hidden rounded-lg shadow transition md:hover:shadow-lg text-center  ">
+          <Link key={index}  href="/development">
+            <div className=" overflow-hidden rounded-lg shadow transition md:hover:shadow-lg text-center  ">
               <img
                 alt={item.title}
                 src={`/images/${item.icon}`}

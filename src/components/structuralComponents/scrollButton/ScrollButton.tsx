@@ -1,4 +1,5 @@
-import { IScrollButtonProp } from "@component/Interface/Interfaces";
+'use client'
+import { IScrollButtonProp } from "../../../Interface/Interfaces";
 
 export default function ScrollButton(props: IScrollButtonProp) {
     const { to, page, parallaxEffect, target, customCss } = props

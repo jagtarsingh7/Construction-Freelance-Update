@@ -1,3 +1,4 @@
+'use client'
 import ViewDetectAnimation from '../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation';
 import { useState } from 'react';
 

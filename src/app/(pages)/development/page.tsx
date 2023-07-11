@@ -1,46 +1,16 @@
-'use client'
-import { useRef } from "react";
-import ScrollButton from "../../../components/structuralComponents/scrollButton/ScrollButton";
 import development from "../../../data/development.json"
 import ViewDetectAnimation from "../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation";
 import Footer from "../../../components/structuralComponents/footer/Footer";
-import Banner from "../../../components/structuralComponents/banner/Banner";
 import Image from 'next/image'
-
+import DevelopmentCLientComponent from "./development";
 
 function Development() {
-  const targetRef = useRef(null);
   const developmentValues = Object.values(development)
   return (
     <div className="bg-white mx-auto ">
-
-      <Banner
-        parallaxEffect={false} heading={null} subHeading={null} direction1={""} direction2={""} speed1={0} speed2={0} level1={0} level2={0}
-        customCss1={null} customCss2={null} customCssOuter={"flex min-h-screen h-full items-center justify-center"} backgroundImageName={"project1.jpg"} extraLayer={false}>
-        <div className="px-6 text-center text-black md:px-12 ">
-          <ViewDetectAnimation direction={"Y"} styles={""} speed={0} level={0} to={0} repeat={false}>
-            <h2 className="mb-12 lg:text-6xl md:text-5xl  text-3xl font-serif leading-tight tracking-tight underline bg-white bg-opacity-20 ">
-              Streamlined Procurement <br /><span>& Timely Delivery</span>
-            </h2>
-          </ViewDetectAnimation>
-          <ScrollButton target={targetRef} parallaxEffect={false} to={0} customCss={null} ></ScrollButton>
-          <p className="mt-24 text-white text-center md:text-3xl text-xl underline font-serif ">Prioritizing Safety and Compliance for a Secure Future</p>
-        </div>
-      </Banner>
-
-      <div ref={targetRef} className=" mt-20 min-h-min">
+      <DevelopmentCLientComponent/>
+      <div  className=" mt-20 min-h-min">
         <div className="bg-white h-full w-full container mx-auto ">
-          <div className=" mx-auto  ">
-            <ViewDetectAnimation direction={"X"} level={-10} styles={""} speed={0} to={0} repeat={false}>
-              <h2 className="flex border-b-2  font-extrabold md:text-5xl text-2xl  text-yellow-300 font-serif pt-5">
-                Project planning
-              </h2>
-            </ViewDetectAnimation>
-            <p className=" md:text-lg mt-2 text-sm text-gray-700 leading-relaxed mb-8 ">
-              VIRDICON Ltd's procurement and project planning system focuses on achieving cost reduction and cycle time optimization. By implementing efficient procurement practices, the company can obtain resources at competitive prices, while effective project planning helps in proper resource allocation and timely project execution.
-              This systematic approach enables VIRDICON Ltd to deliver projects in a cost-effective and timely manner, ensuring client satisfaction and project success.
-            </p>
-          </div>
           <div className="grid grid-cols-1 md:gap-8 md:p-10  ">
             <section>
               <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">

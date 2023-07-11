@@ -8,7 +8,7 @@
     "description5":"We combine technical knowledge and innovative solutions to deliver high-quality buildings that meet client requirements.",
     "description6":"With our extensive experience in building engineering, we are equipped to handle diverse projects, ranging from residential and commercial buildings to industrial and institutional structures.",
     "time": 1,
-    "icon": "../images/service2.jpg"
+    "icon": "/images/service2.jpg"
   },
   {
     "title": "Civil Engineering",
@@ -19,7 +19,7 @@
     "description5":"With our experience and expertise, we are capable of handling projects of various scales and complexities, adapting our approach to meet the unique requirements of each project.",
     "description6":"Our commitment to quality, safety, and client satisfaction is at the core of our civil engineering services, as we strive to deliver exceptional results that meet and exceed expectations",
     "time": 2,
-    "icon": "../images/service3.jpg"
+    "icon": "/images/service3.jpg"
   },
   {
     "title": "Electrical Installations",
@@ -30,7 +30,7 @@
     "description5":"We work closely with clients to understand their specific requirements and tailor our electrical solutions to meet their needs, ensuring a customized and seamless installation process.",
     "description6":"Our commitment to quality and attention to detail ensures that all electrical installations are of the highest standard, delivering reliable and long-lasting results for our clients.",
     "time": 3,
-    "icon": "../images/build.jpg"
+    "icon": "/images/build.jpg"
   },
   {
     "title": "Plumbing Installations",
@@ -41,7 +41,7 @@
     "description5":"We work closely with clients to understand their specific requirements and tailor our plumbing solutions to meet their needs, providing customized and efficient plumbing systems.",
     "description6":"Our commitment to excellence and attention to detail ensures that all plumbing and water installations are carried out with precision and reliability, resulting in long-lasting and efficient systems for our clients.",
     "time": 4,
-    "icon": "../images/plumb.jpg"
+    "icon": "/images/plumb.jpg"
   },
   {
     "title": "Landscaping",
@@ -52,6 +52,6 @@
     "description5":"Whether it's a residential, commercial, or public space, we have the expertise to create visually appealing landscapes that complement the surrounding architecture and environment.",
     "description6":"With attention to detail and a focus on quality craftsmanship, we strive to deliver landscaping projects that exceed our clients' expectations and provide long-lasting beauty and enjoyment.",
     "time": 6,
-    "icon": "../images/landscaping.jpg"
+    "icon": "/images/landscaping.jpg"
   }
 ]
