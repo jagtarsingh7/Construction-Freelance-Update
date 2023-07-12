@@ -1,16 +1,18 @@
 
+## Please note that the app has been migrated to Next.js 13, providing enhanced performance and additional features
+
 # Freelance Web App
 https://virdicon.com/
 
-This is a full-stack web application built with React and TypeScript. It utilizes serverless cloud functions and the Twilio API for text messages. The website is deployed on virdicon.com and includes various animations and parallax effects created using React Spring.
+This is a full-stack web application built with Nextjs13, React and TypeScript. It utilizes serverless cloud functions and the Twilio API for text messages. The website is deployed on virdicon.com and includes various animations and parallax effects created using React Spring.
 
 ## Features
 
-- Serverless cloud functions for efficient and scalable backend operations
+- Full-stack architecture with Nextjs-13, React, TypeScript, and Google Firestore database.
+- Serverless Google Firebase cloud functions for efficient and scalable backend operations
 - Integration with the Twilio API for sending text messages
 - Deployment on virdicon.com for easy access and availability
 - Engaging animations and parallax effects using React Spring
-- Full-stack architecture with React, TypeScript, and Google Firebase Firestore database
 - Context API for state management within the application
 
 ## Technologies Used

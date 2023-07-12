@@ -1,5 +1,7 @@
-import { useInView, animated } from "@react-spring/web"
+'use client'
+
 import { IViewDetectAnimationProp } from "../../../Interface/Interfaces"
+import { useInView, animated } from "@react-spring/web"
 
 export default function ViewDetectAnimation(props:IViewDetectAnimationProp) {
 

@@ -1,3 +1,4 @@
+'use client'
 import { IScrollButtonProp } from "../../../Interface/Interfaces";
 
 export default function ScrollButton(props: IScrollButtonProp) {

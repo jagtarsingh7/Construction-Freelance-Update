@@ -1,5 +1,5 @@
-import ViewDetectAnimation from '../../animationComponents/viewDetectAnimation/ViewDetectAnimation';
-import { Link } from 'react-router-dom';
+import ViewDetectAnimation from '../../../components/animationComponents/viewDetectAnimation/ViewDetectAnimation';
+import Link from 'next/link'
 import features from "../../../data/feature.json"
 
 const FeatureCards = () => {
@@ -9,8 +9,8 @@ const FeatureCards = () => {
     <div className="mt-14 container  md:bg-transparent bg-white ">
       <div className=" grid grid-cols-1 sm:grid-cols-3 gap-8 md:p-0 p-5 mx-auto">
         {features.map((item, index) => (
-          <Link to="/development">
-            <div key={index} className=" overflow-hidden rounded-lg shadow transition md:hover:shadow-lg text-center  ">
+          <Link key={index}  href="/development">
+            <div className=" overflow-hidden rounded-lg shadow transition md:hover:shadow-lg text-center  ">
               <img
                 alt={item.title}
                 src={`/images/${item.icon}`}
