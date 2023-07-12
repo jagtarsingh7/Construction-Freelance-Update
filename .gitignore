@@ -1,28 +1,28 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+virdiconFrontend/node_modules
+virdiconFrontend/.pnp
+virdiconFrontend/.pnp.js
 
 # testing
-/coverage
+virdiconFrontend/coverage
 
 # next.js
-/.next/
-/out/
+virdiconFrontend/.next/
+virdiconFrontend/out/
 
 # production
 /public
-/build
-/functions/.env
+virdiconFrontend/build
+googleCloudFunctions/functions/.env
+virdiconFrontend/.env
 .env
 .firebaserc
 firebase.json
 firebase.indexes.json
 firestore.rules
 # misc
-/src/data
 .DS_Store
 .env.local
 .env.development.local
